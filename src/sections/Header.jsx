@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { FaXmark, FaBars } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
+import logo from "../assets/img/logo1-removebg.png";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -46,9 +48,9 @@ const Header = () => {
       <h1 className="text-black md:text-4xl text-3xl font-bold font-rubik">
         {/* PMT <span className="text-yellow-500 italic">Steels</span> */}
         <img
-          src="/src/assets/img/logo1-removebg.png"
+          src={logo}
           className="h-[100px] w-[160px] text-black filter brightness-0 contrast-200 saturate-[1.3]"
-          alt="logo"
+          alt=""
         />
       </h1>
       <ul className="lg:flex justify-center items-center gap-6 hidden">
